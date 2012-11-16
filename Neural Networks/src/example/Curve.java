@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 
 public class Curve {
+	
     protected final GraphCanvas canvas;
     protected Color color;
 
@@ -37,4 +38,5 @@ public class Curve {
 
     protected int screenifyX(double x) { return (int) (0.5 + x0 + x*xScale); }
     protected int screenifyY(double y) { return (int) (0.5 + y0 - y*yScale); }
+    
 }

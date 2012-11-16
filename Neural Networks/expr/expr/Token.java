@@ -10,6 +10,15 @@ class Token {
     public static final int TT_LE     = -5;
     public static final int TT_NE     = -6;
     public static final int TT_GE     = -7;
+    
+    public final int ttype;
+    public final String sval;
+    public final double nval;
+
+    public final int location;
+
+    public final int leadingWhitespace, trailingWhitespace;
+    
 
     public Token(int ttype, double nval, String input, int start, int end) {
         this.ttype = ttype;
@@ -43,11 +52,5 @@ class Token {
 	this.trailingWhitespace = token.trailingWhitespace;
     }
 
-    public final int ttype;
-    public final String sval;
-    public final double nval;
-
-    public final int location;
-
-    public final int leadingWhitespace, trailingWhitespace;
+    
 }
