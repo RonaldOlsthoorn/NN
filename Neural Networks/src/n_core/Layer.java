@@ -4,9 +4,11 @@ import java.util.HashMap;
 
 public class Layer {
 	
-	private HashMap<String,Neuron> inputLayers;
-	private HashMap<String,Neuron> outputLayers;
+	private HashMap<String,Layer> inputLayers;
+	private HashMap<String,Layer> outputLayers;
+	private HashMap<String,Neuron> neurons;
 	private HashMap<String,Variable> variants;
+	
 	
 
 }
