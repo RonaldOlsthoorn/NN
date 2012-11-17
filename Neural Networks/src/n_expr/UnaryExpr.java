@@ -1,7 +1,7 @@
 package n_expr;
 
-
 class UnaryExpr extends Expr {
+	
     int rator;
     Expr rand;
 
@@ -30,4 +30,5 @@ class UnaryExpr extends Expr {
 	default: throw new RuntimeException("BUG: bad rator");
 	}
     }
+    
 }
