@@ -12,12 +12,14 @@ public class SyntaxException extends Exception {
 
     /** An error code meaning the input string couldn't reach the end
         of the input; the beginning constituted a legal expression,
-        but there was unparsable stuff left over. */
+        but there was unparsable stuff left over. 
+        */
     public static final int INCOMPLETE = 0;
 
     /** An error code meaning the parser ran into a non-value token
       (like "/") at a point it was expecting a value (like "42" or
-      "x^2"). */
+      "x^2"). 
+      */
     public static final int BAD_FACTOR = 1;
 
     /** An error code meaning the parser hit the end of its input

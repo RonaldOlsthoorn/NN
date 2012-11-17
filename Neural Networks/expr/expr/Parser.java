@@ -89,7 +89,7 @@ public class Parser {
 	return reparse();
     }
 
-    //static private final String operatorChars = "*/+-^<>=,()";
+    static private final String operatorChars = "*/+-^<>=,()";
 
     private Expr reparse() throws SyntaxException {
 	tokens.index = -1;
