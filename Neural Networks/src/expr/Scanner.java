@@ -91,15 +91,9 @@ class Scanner {
         
         else if (0 <= operatorChars.indexOf(s.charAt(i))) {
         	
-        	System.out.println("test 1. i: "+(0 <= operatorChars.indexOf(s.charAt(i))));
-        	
 	    if (i+1 < s.length()) {
-	    	
-        	System.out.println("test 2. i: "+i+"  s: "+s);
         	
 		String pair = s.substring(i, i+2);
-		
-    	System.out.println("test 3. i: "+i+"  sub: "+pair);
     	
 		int ttype = 0;
 		if (pair.equals("<="))
@@ -126,6 +120,7 @@ class Scanner {
             
         } 
         else {
+        	System.out.println("test 1. errorrrr");
             tokens.addElement(makeErrorToken(i, i+1));
             return i+1;
         }
