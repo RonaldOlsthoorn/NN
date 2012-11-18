@@ -23,6 +23,7 @@ public class Variable extends Expr {
      * @return the variable; create it initialized to 0 if it doesn't
      *         yet exist */
     static public synchronized Variable make(String name) {
+    	
 	Variable result = variables.get(name);
 	if (result == null)
 		result = new Variable(name);

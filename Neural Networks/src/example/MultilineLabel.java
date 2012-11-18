@@ -17,9 +17,12 @@ public class MultilineLabel extends java.awt.Canvas {
     }
 
     public void paint(Graphics graphics) {
+    	
 	int h = graphics.getFontMetrics().getHeight();
 	StringTokenizer lines = new StringTokenizer(myText, "\n");
+	
 	for (int y = h; lines.hasMoreTokens(); y += h)
+		
 	    graphics.drawString(lines.nextToken(), 0, y);
     }
 }

@@ -14,11 +14,12 @@ public class GraphCanvas extends Canvas {
         // lf = new Font("Helvetica", Font.PLAIN, 12);
 
         x0 = -10.0;
-	x1 = 10.0;
+        x1 = 10.0;
         y0 = -10.0;
         y1 = 10.0;
 
 	curve = null;
+	
     }
 
     public void setCurve(Curve curve) {
@@ -26,6 +27,7 @@ public class GraphCanvas extends Canvas {
     }
 
     public void paint(Graphics g) {
+    	
 	if (null != curve)
 	    curve.draw(g);
     }

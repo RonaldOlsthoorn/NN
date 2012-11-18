@@ -251,7 +251,6 @@ public class Parser {
 	nextToken();
     }
 
-
     // Error correction
 
     boolean tryCorrections() {
