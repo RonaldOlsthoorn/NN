@@ -159,6 +159,7 @@ public class Parser {
 	"log", "round", "sin", "sqrt", 
 	"tan"
     };
+    
     static private final int[] rators1 = {
 	Expr.ABS, Expr.ACOS, Expr.ASIN, Expr.ATAN, 
 	Expr.CEIL, Expr.COS, Expr.EXP, Expr.FLOOR,
