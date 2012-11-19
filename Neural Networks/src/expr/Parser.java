@@ -174,6 +174,7 @@ public class Parser {
     };
 	
     private Expr parseFactor() throws SyntaxException {
+    	
 	switch (token.ttype) {
 	case Token.TT_NUMBER: {
 	    Expr lit = Expr.makeLiteral(token.nval);

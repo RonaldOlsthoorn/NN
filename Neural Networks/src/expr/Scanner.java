@@ -120,7 +120,6 @@ class Scanner {
             
         } 
         else {
-        	System.out.println("test 1. errorrrr");
             tokens.addElement(makeErrorToken(i, i+1));
             return i+1;
         }
